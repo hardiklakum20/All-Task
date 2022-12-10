@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="JQuary File.js"></script>
+    <style>
+        body{
+            margin: 0px;
+            padding: 0px;
+            overflow: hidden;
+            background: url(back.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 100vh;
+            /* width: 100px; */
+        }
+        .cur{
+            background-image: url(Curtain-Download-PNG.png);
+            height: 650px;
+            background-size: contain;
+            position: absolute;
+            top: 0px;
+            left: 400px;
+            width: 500px;
+            background-repeat: no-repeat;
+            z-index: 9;
+        
+            
+         } 
+         .ganesh{
+            position: absolute;
+            top: 160px;
+            left: 460px;
+         }
+         .ganesh img{
+            height: 410px;
+         }
+        .flower{
+            position: absolute;
+            top: 12%;
+            left: 400px;
+            right: 0px;
+            height: 200px;
+            width: 30%;
+            background-image: url(flower.jpg);
+            background-size: 462px;
+            animation: flower 10s linear infinite;
+            /* z-index: 1; */
+            /* opacity: 0.8; */
+        }
+        @keyframes flower {
+            from{
+                background-position: 0 center;
+            }
+            to{
+                background-position: 460px center;
+            }            
+        }
+        .open-cur{
+            position: absolute;
+            top: 0%;
+            left:400px;
+            z-index: 1;
+        }
+        .open-cur img{
+            width: 48%;
+            height: 600px;
+            /* left: -400px; */
+            /* background-color: aquamarine; */
+        }
+        h1{
+            position: absolute;
+            color: cornflowerblue;
+            font-size: 25px;
+            top: 550px;
+            /* background-color: aqua; */
+            width: 400px;
+            left: 36.5%;
+            animation: glow 1s infinite alternate;
+        }
+        @keyframes glow {
+            from{text-shadow: 0px 0px 5px #fb3727,0px 0px 5px #fb3727;}
+            to{text-shadow: 0px 0px 20px #fb3727,0px 0px 20px #fb3727;}
+            
+        }
+
+
+    </style>
+</head>
+<body>
+    <section>
+        <div class="cur"></div>
+
+
+        <div class="flower"></div>
+        <div class="ganesh">
+            <img src="g.png" alt="ganesh">
+        </div>
+        <div class="open-cur">
+            <img src="open cuv.jpg" alt="open cuv">
+        </div>
+
+        <h1>Happy Ganesh Chaturthi</h1>
+    </section>
+</body>
+</html>
+<script>
+    $(document).ready(function(){
+        $(".cur").click(function(){
+            $(".open-cur").animate({"right":"800px"},2000)
+        })
+    })
+</script>

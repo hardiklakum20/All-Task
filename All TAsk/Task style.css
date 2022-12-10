@@ -1,0 +1,112 @@
+table{
+    height: 560px;
+    width: 550px;
+    background-color:black;
+    padding: 50px;
+    margin-top: 40px;
+    margin-left: 30px;
+    opacity: 0.8;
+    
+    
+    
+}
+input{
+    color:white;
+    background-color:black;
+    border: 0;
+    border-bottom:1px solid white;
+    width: 430px;
+    align:center;
+    padding-bottom: 7px;
+    
+}
+::placeholder{
+    color: white;
+}
+#submit{
+    background-color: skyblue;
+     width: 430px;
+     height:50px ;
+     align: left;
+     font-weight: bold;
+     font-size:large;
+     text-align: center;
+     margin-top: -30px;
+    
+}
+#textarea{
+    background-color: black;
+    color: white;
+    border: 0;
+    border-bottom: 1px solid white;
+    width: 430px; 
+    padding-bottom: 60px;
+    margin-top: -20px;  
+}
+#two{
+    float: right;
+    margin-left: 50px;
+    height: 180px;
+    width: 590px;
+    margin-top: -1000px;
+    margin-right: 100px;
+}
+#name{
+    width: 220px;
+}
+#add{
+    width: 220px;
+}
+#phone{
+    width: 220px;
+}
+#sub{
+    width: 220px;
+
+}
+
+#textarea2{
+    border: 0;
+    border-bottom: 1px solid white;
+    background-color: black;
+    width: 220px;
+    margin-top: -190px;
+    padding-bottom: 135px;
+    float: right;
+}
+#sum{
+    width: 220px;
+    align: left;
+     font-weight: bold;
+     font-size:large;
+     background-color: skyblue;
+     float: right;
+     height: 40px;
+}
+#contact{
+    background-color: black;
+    height: 180px;
+    width: 100px;
+    margin-left: 645px;
+    margin-bottom:  435px;
+    width: 590px;
+    margin-top: -175px;
+    color: skyblue;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 65px;
+    text-align: center;
+    opacity: 0.8;
+    
+}
+#time{
+    font-size: 20px;
+    color: white;
+    text-align: right;
+    margin-right: 15px;
+}
+body{
+    background-image: url(mountains.webp);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-origin:;
+}

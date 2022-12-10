@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        @font-face {
+            font-family: font-5;
+            src: url(img/Fonts/font-5.ttf);
+        }
+        body{
+            background-color: bisque;
+            display: flex;
+            justify-content: space-evenly;
+        }
+        .head{
+           width: 100%;
+           text-align: center;
+        }
+        h1{
+            font-size: 35px;
+            position: relative;
+            margin: 40px 0;
+            font-family: font-5;
+            color:  blueviolet;
+            transition: transform 1s;
+        }
+        h1::before{
+            content: '';
+            position: absolute;
+            width: 80px;
+            height: 3px;
+            background-color: brown;
+            bottom: -10px;
+            left: 685px;
+            transform: translateX(-50%);
+            animation: animate 4s linear infinite;
+        }
+        h1:hover{
+            transform: rotate(360deg);
+        }
+        @keyframes animate {
+            0%{
+                width: 50px;
+            }
+            50%{
+                width: 100px;
+            }
+            100%{
+                width: 50px;
+            }
+
+        }
+        .photo{
+            top: 150px;
+            position: absolute;
+            /* background-color: black; */
+            /* padding: 100px; */
+            left: 100pxs;
+            /* margin: 50px; */
+          
+        }
+        img{
+            margin: 10px;
+            box-shadow: 5px 5px 4px cadetblue;
+            color: ;
+            padding: 10px;
+            border-radius: 5px; 
+        }
+        #one{
+            transition: transform 1s;
+        }
+        #one:hover{
+            transform: rotatex(180deg);
+            transform: rotateY(180deg);
+        }
+        #two{
+            transition: transform 2s;
+        }
+        #two:hover{
+               transform: scale(1.3);
+        }
+        #three{
+            transition: transform 0.5s;
+        }
+        #three:hover{
+            transform: rotatex(180deg);
+            
+        }
+        #four{
+            transition: transform 2s;
+        }
+        #four:hover{
+            transform: rotate(180deg);
+        }
+        #five{
+            transition: transform 2s;
+
+        }
+        #five:hover{
+            transform: scale(-0.1);
+        }
+        #six{
+            transition: transform 2s;
+        }
+        #six:hover{
+            transform: rotateY(180deg);
+            transform: rotateZ(-180deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="head">
+        <h1>Cars Gallary</h1>
+    </div>
+    <div class="photo">
+        <img src="car 1.jpg" alt="" height="300px" width="400px" id="one">
+        <img src="car 2.png" alt="" height="300px" width="400px" id="two">
+        <img src="car 3.jpg" alt="" height="300px" width="400px" id="three"><br>
+        <img src="car 4.jpg" alt="" height="300px" width="400px" id="four">
+        <img src="car 5.webp" alt="" height="300px" width="400px" id="five">
+        <img src="car 6.jpg" alt="" height="300px" width="400px" id="six">
+    </div>
+</body>
+</html>

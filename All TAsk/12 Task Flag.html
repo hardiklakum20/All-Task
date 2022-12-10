@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: antiquewhite;
+        }
+        .foot1{
+            height: 30px;
+            width: 120px;
+            background-color: saddlebrown;
+            margin-top: 530px;
+            margin-left: 500px;
+        }
+        .foot2{
+            height: 30px;
+            width: 150px;
+            background-color: saddlebrown;
+            margin-top: 0px;
+            margin-left: 485px;
+        }
+        .line{
+            height: 480px;
+            width: 20px;
+            background-color: silver;
+            margin-top: -540px;
+            margin-left: 550px;
+            border: 0;
+        }
+        .round{
+            height: 20px;
+            width: 20px;
+            border-radius: 50%;
+            background-color: silver;
+            margin-top: -500px;
+            margin-left: 550px;
+        }
+        .flag1{
+            height: 55px;
+            width: 250px;
+            background-color: coral;
+            margin-left: 570px;
+        }
+        .flag2{
+            height: 55px;
+            width: 250px;
+            background-color: white;
+            margin-left: 570px;
+        }
+        .ashok{
+            width: 50px;
+            height: 50px;
+            position: relative;
+            border: 4px solid navy;
+            border-radius: 50%;
+            margin: 0 auto;
+        }
+        .ashok:before{
+            content: "";
+            position: absolute;
+            top: 17.5px;
+            left: 17.5px;
+            width: 15px;
+            height: 15px;
+            background-color: navy;
+            border-radius: 50%;
+        }
+        .spoke{
+            width: 5px;
+            height: 0;
+            position: absolute;
+            top: 22px;
+            left: 25px;
+            border-right: 13px solid navy;
+            border-top: 2px solid transparent;
+            border-bottom: 2px solid transparent;
+            transform-origin: 0 0.25em;
+        }
+        .spoke:before{
+            content: "";
+            position: absolute;
+            width: 0;
+            height: 0;
+            top: -2px;
+            left: 12px;
+            border-top: 2px solid transparent;
+            border-left: 15px solid navy;
+            border-bottom: 2px solid transparent;
+
+        }
+        /* .spoke:after{
+            content: "";
+            position: absolute;
+            width: 7px;
+            height: 8px;
+            top: 2px;
+            left: 22px;
+            background-color: navy;
+            border-radius: 50%;
+        } */
+        .spoke1{
+            transform: rotate(0deg);
+        }
+        .spoke2{
+            transform: rotate(15deg);
+        }
+        .spoke3{
+            transform: rotate(30deg);
+        }
+        .spoke4{
+            transform: rotate(45deg);
+        }
+        .spoke5{
+            transform: rotate(60deg);
+        }
+        .spoke6{
+            transform: rotate(75deg);
+        }
+        .spoke7{
+            transform: rotate(90deg);
+        }
+        .spoke8{
+            transform: rotate(105deg);
+        }
+        .spoke9{
+            transform: rotate(120deg);
+        }
+        .spoke10{
+            transform: rotate(135deg);
+        }
+        .spoke11{
+            transform: rotate(150deg);
+        }
+        .spoke12{
+            transform: rotate(165deg);
+        }
+        .spoke13{
+            transform: rotate(180deg);
+        }
+        .spoke14{
+            transform: rotate(195deg);
+        }
+        .spoke15{
+            transform: rotate(210deg);
+        }
+        .spoke16{
+            transform: rotate(225deg);
+        }
+        .spoke17{
+            transform: rotate(240deg);
+        }
+        .spoke18{
+            transform: rotate(255deg);
+        }
+        .spoke19{
+            transform: rotate(270deg);
+        }
+        .spoke20{
+            transform: rotate(285deg);
+        }
+        .spoke21{
+            transform: rotate(300deg);
+        }
+        .spoke22{
+            transform: rotate(315deg);
+        }
+        .spoke23{
+            transform: rotate(330deg);
+        }
+        .spoke24{
+            transform: rotate(345deg);
+        }
+        .flag3{
+            height: 55px;
+            width: 250px;
+            background-color: green;
+            margin-left: 570px;
+        }
+        .flag{
+           animation: flag 2s linear;
+        }
+        @keyframes flag {
+            0%{
+            transform: translateY(320px); 
+          }
+        }
+    </style>
+</head>
+<body>
+    <div class="foot1"></div>
+    <div class="foot2"></div>
+    <div class="line"></div>
+    <div class="round"></div>
+    <div class="flag">
+        <div class="flag1"></div>
+        <div class="flag2">
+            <div class="ashok">
+                <div class="spoke spoke1"></div>
+                <div class="spoke spoke2"></div>
+                <div class="spoke spoke3"></div>
+                <div class="spoke spoke4"></div>
+                <div class="spoke spoke5"></div>
+                <div class="spoke spoke6"></div>
+                <div class="spoke spoke7"></div>
+                <div class="spoke spoke8"></div>
+                <div class="spoke spoke9"></div>
+                <div class="spoke spoke10"></div>
+                <div class="spoke spoke11"></div>
+                <div class="spoke spoke12"></div>
+                <div class="spoke spoke13"></div>
+                <div class="spoke spoke14"></div>
+                <div class="spoke spoke15"></div>
+                <div class="spoke spoke16"></div>
+                <div class="spoke spoke17"></div>
+                <div class="spoke spoke18"></div>
+                <div class="spoke spoke19"></div>
+                <div class="spoke spoke20"></div>
+                <div class="spoke spoke21"></div>
+                <div class="spoke spoke22"></div>
+                <div class="spoke spoke23"></div>
+                <div class="spoke spoke24"></div>
+            </div>
+        </div>
+        <div class="flag3"></div>
+    </div>
+</body>
+</html>

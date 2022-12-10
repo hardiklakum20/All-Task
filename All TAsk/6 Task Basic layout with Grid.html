@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main{
+            width: 100%;
+            display: grid;
+            grid-template-columns: auto auto auto;
+            justify-content: end;
+            row-gap: 20px;
+        }
+        .item1{
+            background-color: rgb(15, 26, 59);
+            height: 110px;
+            width: 1150px; 
+            margin-top: -10px;    
+        }
+        .head{
+            color: white;
+            font-size: 30px;
+            padding-top: 20px;
+            padding-left: 30px;
+        }
+        .menu{
+            font-size: large;
+            margin-top: 20px;
+            margin-left: 30px;
+        }
+       .menu a{
+            text-decoration: none;
+            margin: 20px;
+            padding: 10px;
+        }
+        .menu a:link{
+            color: white;
+        }
+       .menu a:hover{
+            border-bottom: 2px solid aqua;
+        }
+        
+        .item2{
+            height: 110px;
+            background-color: rgb(11, 18, 80);
+            width: 200px;
+            color: white;
+            text-align: center;
+            font-size: 20px;
+            box-sizing: border-box;
+            padding-top: 70px;
+            margin-top: -10px;
+
+        }
+        .right{
+            /* display: grid;
+            grid-template-columns: auto auto; */
+            height: 530px;
+            width: 200px;
+            background-color: gainsboro;
+            margin-top: 100px ;
+            margin-left:-200px; 
+        }
+        .collect{
+            /* margin-top: 30px; */
+            font-size: 20px;
+            
+        }
+        .collect ul{
+            list-style-type: none;
+            /* margin-top: 5px; */
+            /* padding: 20px; */
+        }
+        .collect li{
+            margin-top: 7px;
+            margin-left: -40px;
+            padding-right: 20px;
+        }
+        .collect a{
+            /* margin-top: 20px; */
+            text-decoration: none;
+            /* padding-top: 10px; */
+            /* background-color: black; */
+            /* padding: 20px; */
+            padding-left: 40px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+           
+        }
+        .collect a:link{
+            color: gray;
+        }
+        .collect a:hover{
+            border-left: 2px solid aqua;
+            color: black;
+        }
+        .center{
+            display: grid;
+            grid-template-columns: auto auto auto;
+            justify-content: space-around;
+            margin-top: -550px;
+            /* column-gap: -10px; */
+        }
+        .one{
+            background-color: whitesmoke;
+            height: 270px;
+            width: 280px;
+            /* margin-left: -20px; */
+            text-align: center;
+        }
+        .two{
+            background-color: whitesmoke;
+            height: 200px;
+            width: 280px;
+            /* margin-left: -80px; */
+        }
+        .three{
+            background-color: whitesmoke;
+            height: 270px;
+            width: 280px;
+            /* margin-left: -80px; */
+            text-align: center;
+        }
+        .four{
+            background-color: whitesmoke;
+            height: 250px;
+            width: 280px;
+            /* margin-left: -20px; */
+            margin-top: -10px;
+            box-sizing: border-box;
+        }
+        .five{
+            background-color: whitesmoke;
+            height: 320px;
+            width: 280px;
+            /* margin-left: -80px; */
+            margin-top: -80px;
+            box-sizing: border-box;
+            text-align: center;
+
+        }
+        .six{
+            background-color: whitesmoke;
+            height: 250px;
+            width: 280px;
+            margin-top: -10px;
+            box-sizing: border-box;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="item1">
+            <div class="head">Clipboards</div>
+            <div class="menu">
+                <a href="#">Photos</a>
+                <a href="#">Video</a>
+                <a href="#">Audio</a>
+                <a href="#">Notes</a>
+                <a href="#">Links</a>
+            </div>
+        </div>
+        <div class="item2">Collection</div>
+        <div class="right">
+            <div class="collect">
+                <ul>
+               <li><a href="#">Architecture</a></li><br>
+                <li><a href="#">Design</a></li><br>
+                <li><a href="#">Products</a></li><br>
+                <li><a href="#">Minimal</a></li><br>
+                <li><a href="#">Autos</a></li><br>
+                <li><a href="#">Technology</a></li><br>
+                <li><a href="#">Photography</a></li><br>
+            </ul>
+            </div>
+        </div>
+        <div class="center">
+            <div class="one">
+                <img src="1.jpg" alt="">
+                <p><b>Minimal industrial loudge</b></p>
+                
+            
+
+            </div>
+            <div class="two">
+                <img src="2.jpg" alt="" width="280px">
+                <p></p>
+            </div>
+            <div class="three">
+                <img src="3.jpg" alt="" width="280px">
+                <p><b>Concrete and glass</b></p>
+               
+                <hr>
+            </div>
+            <div class="four">
+                <img src="4.jpg" alt="" width="280px" height="210px">
+                <p margin="10px">via.com</p>
+            </div>
+            <div class="five">
+                <img src="5.jpg" alt="" width="280px" height="230">
+                <p><b>Open Front House</b></p>
+                <p>Sed posuere consectefur est at leboribies.</p>
+                <hr>
+            </div>
+            <div class="six">
+                <img src="6.jpg" alt="" width="280px" height="200px">
+                <p>Furniter Hall</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

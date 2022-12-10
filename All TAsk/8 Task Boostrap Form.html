@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <style>
+        .main{
+            background: url(background.webp);
+            width: 100%;
+            height: 640px;
+            background-size: cover;
+            filter: blur(5px);
+            position: fixed;
+        }
+        .header{
+            position: fixed;
+            color: white;
+            background: rgba(black, black, black, 0.6);
+            /* opacity: 0.4; */
+            padding-left: 210px;
+            padding-right: 210px;
+            margin-left: 300px;
+            background-color: black;
+            margin-top: 30px;
+            opacity: 0.5;
+        }
+        .info{
+            background-color: white;
+            position: fixed;
+            margin-top: 110px;
+            margin-left: 300px;
+            padding: 20px;
+            width: 380px;
+            font-weight: bold;
+        }
+        i{
+            padding: 5px;
+            color: blueviolet;
+            /* background-color:burlywood; */
+            border-radius: 5px;
+        }
+        input{
+            width: 330px;
+            padding: 5px;
+            border: 2px solid blue;
+            border-radius: 5px;
+        }
+        .two{
+            margin-top: 10px;
+        }
+        .three{
+            margin-top: 10px;
+        }
+        .four{
+            margin-top: 10px;
+        }
+        .five{
+            margin-top: 10px;
+        }
+        .six{
+            margin-top: 10px;
+        }
+        .seven input{
+            margin-top: 15px;
+            width: 345px;
+            border: 0;
+            background: linear-gradient(135deg,blueviolet,#71b7e6,#9b59b6);
+            color: white;
+        }
+        .img{
+            position: absolute;
+            top: 0px;
+            left: 390px;
+           
+        }
+        i:hover{
+            color: cornflowerblue;
+        }
+        input:hover{
+            border: 2px solid green;
+            border-radius: 8px;
+        }
+        .seven input:hover{
+            background: linear-gradient(-135deg,#71b7e6,#9b59b6);
+            border: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="main"></div>
+    <div class="header"><h1>Student Registration Form</h1></div>
+    <div class="info">
+        <form action="post">
+            <div class="one">
+                <i class="fa-solid fa-user-tie"></i> FIRSTNAME:
+                <input type="text" name="name" placeholder="Firstname" onblur="validData(this,'first error')">
+                <span id="first error"></span>
+            </div>
+            <div class="two">
+                <i class="fa-solid fa-user"></i> LASTNAME:
+                <input type="text" name="name" placeholder="Lastname" onblur="validData(this,'last error')">
+                <span id="last error"></span>
+            </div>
+            <div class="three">
+                <i class="fa-solid fa-envelope"></i> EMAIL:
+                <input type="email" name="email" placeholder="E-mail" onblur="validData(this,'email error')">
+                <span id="email error"></span>
+            </div>
+            <div class="four">
+                <i class="fa-solid fa-square-phone"></i> PHONE:
+                <input type="tel" name="name" pattern="[0-9]{10}" placeholder="Phone" onblur="validData(this,'phone error')">
+                <span id="phone error"></span>
+            </div>
+            <div class="five">
+                <i class="fa-solid fa-lock"></i> PASSWORD:
+                <input type="password" name="password" placeholder="Password" onblur="validData(this,'password error')">
+                <span id="password error"></span>
+            </div>
+            <div class="six">
+                <i class="fa-solid fa-lock"></i> CONFIRM PASSWORD:
+                <input type="password" name="password" placeholder="Confirm Password" onblur="validData(this,'confirm password error')">
+                <span id="confirm password error"></span>
+            </div>
+            <div class="seven">
+              <input type="submit" name="submit" value="SUBMIT" onclick="demo()">
+            </div>
+        </form>
+        <div class="img">
+            <img src="i.webp" alt="" height="460px" width="398px">
+        </div>
+    </div>
+</body>
+</html>
+<script>
+    function validData(e,spnid)
+    {
+        if(e.value=="")
+        {
+            document.getElementById(spnid);
+           document.getElementById(spnid).innerHTML="Please Enter Data!";
+            return false;
+        }
+        else
+        {
+            document.getElementById(spnid);
+            document.getElementById(spnid).innerHTML="";
+            return false;
+        }
+    }
+  function demo()
+  {
+    var a=confirm("Are You Sure??");
+    if (a==true)
+    {
+        alert("You Pressed Ok!");
+    }
+    else
+    {
+        alert("You Pressed Cancel");
+    }
+  }
+</script>
